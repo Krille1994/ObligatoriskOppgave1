@@ -3,7 +3,7 @@
 function isDateValid(dato) {
     let day = dato.slice(0,2);
     let month = dato.slice(3,5);
-    let year = dato. slice(6,10);
+    let year = dato.slice(6,10);
 
     return (isLength(dato)&&
         thirdAndSixth(dato)&&
