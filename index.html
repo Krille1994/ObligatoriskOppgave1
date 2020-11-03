@@ -58,17 +58,17 @@
             assert.equal(actual, expected);
         });
         QUnit.test("dag er 30 og måned er februar", function (assert) {
-            const actual = isDay('30','02','1942');
+            const actual = isDay('30.02.1942');
             const expected = false;
             assert.equal(actual, expected);
         });
         QUnit.test("dag er 29 februar og det er ikke skuddår", function (assert) {
-            const actual = isDay('29','02','1999');
+            const actual = isDay('29.02.1999');
             const expected = false;
             assert.equal(actual, expected);
         });
         QUnit.test("dag er 29 februar og det er skuddår", function (assert) {
-            const actual = isDay('29','02','2020');
+            const actual = isDay('29.02.2020');
             const expected = true;
             assert.equal(actual, expected);
         });
